@@ -7,7 +7,7 @@ dataSources:
     network: xinfin-mainnet
     source:
       address: "0x36726235dAdbdb4658D33E62a249dCA7c4B2bC68"
-      abi: ERC20
+      abi: IERC20
       startBlock: 36512755
     mapping:
       kind: ethereum/events
@@ -16,7 +16,7 @@ dataSources:
       entities:
         - ERC20Contract
       abis:
-        - name: ERC20
+        - name: IERC20
           file: ./abis/ERC20.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
